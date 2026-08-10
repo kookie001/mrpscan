@@ -291,6 +291,39 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .pricing-note { color: var(--text-dim); font-size: 0.85rem; margin: 0.5rem 0 1.8rem; }
 .pricing-btn { width: 100%; margin-top: auto; }
 
+/* Legal / Privacy Policy */
+.legal-page { max-width: 720px; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
+.legal-back { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--text-dim); margin-bottom: 2.2rem; transition: color 0.15s ease; }
+.legal-back:hover { color: var(--gold-deep); }
+
+.legal-header { margin-bottom: 2.2rem; padding-bottom: 2.2rem; border-bottom: 1px solid var(--border); }
+.legal-header h1 { font-size: clamp(1.9rem, 3.4vw, 2.5rem); font-weight: 700; margin-bottom: 0.3rem; }
+.legal-subtitle { font-size: 1rem; color: var(--gold-deep); font-weight: 600; margin-bottom: 1rem; }
+.legal-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.5rem; font-size: 0.82rem; color: var(--text-dim); }
+
+.legal-intro p { font-size: 1rem; line-height: 1.75; color: var(--text); margin-bottom: 1rem; }
+
+.legal-section { margin-top: 2.8rem; }
+.legal-section h2 { font-size: 1.25rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; border-top: 3px solid var(--gold-deep); padding-top: 0.9rem; }
+.legal-section h3 { font-size: 1rem; font-weight: 700; color: var(--gold-deep); margin: 1.4rem 0 0.7rem; }
+.legal-section p { font-size: 0.96rem; line-height: 1.75; color: var(--text); margin-bottom: 0.9rem; }
+.legal-section ul, .legal-section ol { margin: 0 0 1rem; padding-left: 1.3rem; }
+.legal-section li { font-size: 0.96rem; line-height: 1.65; color: var(--text); margin-bottom: 0.4rem; }
+.legal-section strong { font-weight: 700; }
+
+.legal-contact-card {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+  padding: 1.4rem 1.6rem; margin: 1.2rem 0 1.4rem;
+}
+.legal-contact-company { font-weight: 700; margin-bottom: 0.5rem; }
+.legal-contact-card p { margin-bottom: 0.35rem; font-size: 0.92rem; }
+.legal-contact-card a { color: var(--gold-deep); font-weight: 600; }
+
+@media (max-width: 600px) {
+  .legal-page { padding: 2.5rem 1.25rem 4rem; }
+  .legal-section h2 { font-size: 1.1rem; }
+}
+
 /* Footer */
 .footer { border-top: 1px solid var(--border); padding: 3rem 1.5rem 1.5rem; background: var(--bg-alt); }
 .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
@@ -298,7 +331,9 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .footer-brand p { font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-dim); }
 .footer-contact p { font-size: 0.85rem; margin-bottom: 0.4rem; color: var(--text-dim); }
 .footer-contact a { color: var(--gold-deep); }
-.footer-bottom { max-width: 1200px; margin: 1.2rem auto 0; font-size: 0.78rem; color: #a89a7a; }
+.footer-bottom { max-width: 1200px; margin: 1.2rem auto 0; font-size: 0.78rem; color: #a89a7a; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; align-items: center; }
+.footer-legal-link { color: #a89a7a; text-decoration: underline; text-underline-offset: 2px; transition: color 0.15s ease; }
+.footer-legal-link:hover { color: var(--gold-deep); }
 
 /* Responsive */
 @media (max-width: 980px) {
