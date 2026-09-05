@@ -99,6 +99,12 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .nav-links { display: flex; gap: 1.9rem; margin-right: auto; margin-left: 1rem; }
 .nav-links a { font-size: 0.92rem; font-weight: 500; color: var(--text-dim); transition: color 0.2s; }
 .nav-links a:hover { color: var(--gold-deep); }
+.nav-agent-tile {
+  background: var(--gold); color: #fff !important; padding: 0.5rem 1rem;
+  border-radius: 999px; font-weight: 700; font-size: 0.85rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.nav-agent-tile:hover { background: var(--gold-deep); color: #fff !important; transform: translateY(-1px); }
 .nav-phone { font-size: 0.85rem; font-weight: 600; color: var(--text-dim); border: 1px solid var(--border); padding: 0.5rem 0.9rem; border-radius: 999px; }
 .nav-phone:hover { border-color: var(--gold); color: var(--gold-deep); }
 .nav-toggle { display: none; }
