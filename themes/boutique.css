@@ -288,6 +288,7 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .pricing-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.3rem; }
 .pricing-amount { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; color: var(--gold-deep); line-height: 1; }
 .pricing-amount-custom { font-size: 2rem; }
+.pricing-amount-suffix { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 600; color: var(--text-dim); }
 .pricing-note { color: var(--text-dim); font-size: 0.85rem; margin: 0.5rem 0 1.8rem; }
 .pricing-btn { width: 100%; margin-top: auto; }
 
