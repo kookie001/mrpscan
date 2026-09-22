@@ -304,6 +304,50 @@ main, .nav, .footer { position: relative; z-index: 2; }
 .pricing-note { color: var(--text-dim); font-size: 0.85rem; margin: 0.5rem 0 1.8rem; }
 .pricing-btn { width: 100%; margin-top: auto; }
 
+/* Support / FAQ */
+.support-hero { max-width: 900px; margin: 0 auto; padding: 6.5rem 1.5rem 3rem; text-align: center; }
+.support-hero h1 { font-size: clamp(2rem, 3.6vw, 2.8rem); font-weight: 700; margin-bottom: 0.8rem; }
+.support-sub { color: var(--text-dim); font-size: 1.05rem; max-width: 48ch; margin: 0 auto 2.5rem; }
+
+.support-email-card {
+  display: flex; align-items: center; gap: 1.1rem;
+  max-width: 480px; margin: 0 auto;
+  background: var(--panel); border: 1.5px solid var(--gold);
+  border-radius: 18px; padding: 1.3rem 1.5rem;
+  box-shadow: 0 20px 44px -26px rgba(42,36,26,0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.support-email-card:hover { transform: translateY(-2px); box-shadow: 0 24px 50px -22px rgba(42,36,26,0.3); }
+.support-email-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: var(--gold); color: #fff; display: flex; align-items: center; justify-content: center; }
+.support-email-text { display: flex; flex-direction: column; text-align: left; flex: 1; }
+.support-email-text strong { font-size: 1.02rem; margin-bottom: 0.15rem; }
+.support-email-text span { color: var(--gold-deep); font-weight: 600; font-size: 0.92rem; }
+.support-email-arrow { flex-shrink: 0; font-size: 1.2rem; color: var(--gold-deep); }
+
+.faq { max-width: 740px; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+.faq-list { display: flex; flex-direction: column; gap: 0.65rem; margin-top: 2.2rem; }
+.faq-item {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+  padding: 0 1.25rem; transition: border-color 0.2s ease;
+}
+.faq-item[open] { border-color: var(--gold); }
+.faq-item summary {
+  cursor: pointer; list-style: none; padding: 0.95rem 1.7rem 0.95rem 0;
+  font-weight: 600; font-size: 0.94rem; line-height: 1.4; position: relative;
+  transition: color 0.15s ease;
+}
+.faq-item summary:hover { color: var(--gold-deep); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: ""; position: absolute; right: 0.15rem; top: 50%;
+  width: 8px; height: 8px;
+  border-right: 2px solid var(--gold-deep); border-bottom: 2px solid var(--gold-deep);
+  transform: translateY(-65%) rotate(-45deg); transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after { transform: translateY(-35%) rotate(45deg); }
+.faq-item p { color: var(--text-dim); font-size: 0.88rem; line-height: 1.65; padding: 0 0 1.1rem; margin: 0; }
+.faq-item p a { color: var(--gold-deep); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+
 /* Legal / Privacy Policy */
 .legal-page { max-width: 720px; margin: 0 auto; padding: 3.5rem 1.5rem 6rem; }
 .legal-back { display: inline-block; font-size: 0.85rem; font-weight: 600; color: var(--text-dim); margin-bottom: 2.2rem; transition: color 0.15s ease; }
